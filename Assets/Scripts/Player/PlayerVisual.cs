@@ -24,6 +24,7 @@ public class PlayerVisual : MonoBehaviour
     private void Animations()
     {
         _animator.SetFloat("Speed", _movement.SpeedValue, 0.1f, Time.deltaTime);
+        _animator.SetBool("isDashing", _movement.IsDashing());
     }
 
     private void FlipXPlayer()
